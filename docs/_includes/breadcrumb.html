@@ -1,0 +1,39 @@
+{%- comment -%}
+  Assumptions:
+  - Each page belongs to a collection whose name is provided in page.collection
+    (or defaults to "specification" if not set).
+  - The base path is automatically constructed as "/" + collection name + "/".
+{%- endcomment -%}
+
+{% assign colName = page.collection | default: "specification" %}
+{% assign base_path = "/" | append: colName | append: "/" %}
+
+{%- comment -%}
+  Remove the base path from the current page's URL and split the remainder.
+{%- endcomment -%}
+{% assign clean_url = page.url | remove: base_path %}
+{% assign parts = clean_url | split: "/" %}
+
+<ul style="list-style: none; padding: 0; margin: 0;">
+  <li>
+    {%- comment -%}
+      First breadcrumb: the collection home.
+    {%- endcomment -%}
+    <a href="{{ base_path | relative_url }}">{{ colName | capitalize }}</a>
+    
+    {% assign cumulative = base_path %}
+    {%- comment -%}
+      Loop over the parts to build the breadcrumb trail.
+    {%- endcomment -%}
+    {% for part in parts %}
+      {% if part != "" %}
+        {%- assign cumulative = cumulative | append: part -%}
+        &nbsp;->&nbsp;
+        <a href="{{ cumulative | relative_url }}">{{ part }}</a>
+        {%- if forloop.last == false -%}
+          {%- assign cumulative = cumulative | append: "/" -%}
+        {%- endif -%}
+      {% endif %}
+    {% endfor %}
+  </li>
+</ul>

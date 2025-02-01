@@ -11,9 +11,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 
-{% seo %}
 
-  {% include head-custom.html %}
 </head>
 
 <body>
@@ -36,6 +34,7 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
+          {% include breadcrumb.html %}
           {{ content }}
         </article>
       </div>
