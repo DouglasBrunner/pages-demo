@@ -1,15 +1,21 @@
 ---
 title: "Specification"
 layout: default
+toc: true         # Enable table of contents generation
+toc_levels: 1..3  # (Optional) Only include headings levels 1 to 3
 ---
 
 # Specification
 
-Below is the content of our Cucumber feature file, displayed with syntax highlighting:
+* Table of Contents
+{:toc}
 
+## Complete Feature File
 {% highlight cucumber %}
 {% include feature-files/matching.feature %}
 {% endhighlight %}
+
+## Java Syntax Example
 
 ```java
 
