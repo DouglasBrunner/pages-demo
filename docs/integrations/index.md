@@ -1,9 +1,7 @@
 ---
 title: "Integrations"
-layout: post 
 toc: true         # Enable table of contents generation
 toc_levels: 1..3  # (Optional) Only include headings levels 1 to 3
-categories: main-index
 ---
 
 # Specification
