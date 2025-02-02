@@ -2,7 +2,7 @@
 title: "Specification"
 toc: true
 toc_levels: 1..3 
-categories: main-index
+category: Specification
 ---
 
 # Specification
