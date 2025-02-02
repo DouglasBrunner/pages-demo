@@ -363,7 +363,7 @@ prism:
         #- ini
         #- io
         #- j
-        #- java
+        - java
         #- javadoc
         #- javadoclike
         #- javastacktrace

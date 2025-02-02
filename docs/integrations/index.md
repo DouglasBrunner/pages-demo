@@ -18,6 +18,5 @@ toc_levels: 1..3  # (Optional) Only include headings levels 1 to 3
 ## Java Syntax Example
 
 ```java
-
 public static void main(String[] args) {}
 ```
