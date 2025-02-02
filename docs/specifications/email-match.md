@@ -1,11 +1,12 @@
 ---
 title: "Email Match Specification"
-toc: true
-toc_levels: 1..3 
-category: Specification
+category: Specifications
 ---
 
+*
+{:toc}
 
 # Email Match Specification
 
 Text here
+
