@@ -8,3 +8,8 @@ description: [An automated helper to tackle email triage.]
 collections:
   specification:
     output: true
+
+defaults:
+  -
+    values:
+      layout: libdoc/page
