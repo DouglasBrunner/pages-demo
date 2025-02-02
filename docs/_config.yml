@@ -4,15 +4,9 @@
 # ---------
 # TO USE JEKYLL LIBDOC AS REMOTE THEME, UNCOMMENT (available only on Github)
 remote_theme: DouglasBrunner/Jekyll-LibDoc
-# ---------
-# JEKYLL CONFIGURATION
-# More info at https://jekyllrb.com/docs/configuration/options/
-# ---------
-# TO USE JEKYLL LIBDOC AS REMOTE THEME, UNCOMMENT (available only on Github)
-remote_theme: olivier3lanc/Jekyll-LibDoc
-title: Jekyll LibDoc as remote theme
+title: Mail Minion
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
-  An example of a repository using Jekyll LibDoc as a remote theme
+  An automated helper to tackle email triage.
 # IMPORTANT: on Github Pages deploys, url and baseurl must be commented or set to proper settings, otherwise links and resources URL are wrong
 # url: http://localhost # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: /Jekyll-LibDoc/_site # the subpath of your site, e.g. /blog
@@ -185,31 +179,15 @@ sidebar:
         #     iframe_mode: true
         #     category: Features
         # Example URL
-        -   url: https://olivier3lanc.github.io/Scroll-Btween/
-            title: Scroll Btween
-            order: 500
-            category: Examples using LibDoc
-        -   url: https://olivier3lanc.github.io/Scroll-Frames/
-            title: Scroll Frames
-            order: 500
-            category: Examples using LibDoc
-        -   url: https://olivier3lanc.github.io/seemap/
-            title: SEEMAP
-            order: 500
-            category: Examples using LibDoc
+        # -   url: https://olivier3lanc.github.io/Scroll-Btween/
+        #     title: Scroll Btween
+        #     order: 500
+        #     category: Examples using LibDoc
         # Example remote URL
-        -   url: https://github.com/olivier3lanc/Jekyll-LibDoc
-            title: <span class="i-github u-mr-xxs"></span> Jekyll LibDoc
-            order: 510
-            category: External resources
-        -   url: https://pages.github.com
-            title: Github Pages
-            order: 510
-            category: External resources
-        -   url: https://jekyllrb.com
-            title: Jekyll
-            order: 510
-            category: External resources
+        # -   url: https://github.com/olivier3lanc/Jekyll-LibDoc
+        #     title: <span class="i-github u-mr-xxs"></span> Jekyll LibDoc
+        #     order: 510
+        #     category: External resources
 
 # BADGES
 # Feature that allows to display badges into the footer https://shields.io image html and url
