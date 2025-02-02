@@ -152,18 +152,18 @@ sidebar:
 
     # LOGO
     # Top left branding/homepage link, specified image URL or site title if no URL is set
-    logo:
-        # LOGO URL
-        # Image URL: Can be local e.g. '/img/logo.png' or remote 'https://remotesite.com/img/logo.png'
-        url: /assets/libdoc/img/favicon/android-chrome-512x512.png
+    # logo:
+    #     # LOGO URL
+    #     # Image URL: Can be local e.g. '/img/logo.png' or remote 'https://remotesite.com/img/logo.png'
+    #     url: /assets/libdoc/img/favicon/android-chrome-512x512.png
 
-        # LOGO MAX HEIGHT
-        # Logo image max height, applies only if url is set
-        max_height: 40px
+    #     # LOGO MAX HEIGHT
+    #     # Logo image max height, applies only if url is set
+    #     max_height: 40px
 
-        # LOGO FONT SIZE FALLBACK
-        # If no logo url, font size of the site title, ignored if url is set
-        font_size: 32px
+    #     # LOGO FONT SIZE FALLBACK
+    #     # If no logo url, font size of the site title, ignored if url is set
+    #     font_size: 32px
 
     # ADDITIONAL LINKS
     # Allows to add links that are not pages included into the project
