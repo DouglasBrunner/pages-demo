@@ -1,17 +1,14 @@
-remote_theme: DouglasBrunner/Jekyll-LibDoc
-plugins:
-- jekyll-remote-theme
-
 # ---------
 # JEKYLL CONFIGURATION
 # More info at https://jekyllrb.com/docs/configuration/options/
 # ---------
-
-title: LibDoc # title of the documentation
+# TO USE JEKYLL LIBDOC AS REMOTE THEME, UNCOMMENT (available only on Github)
+remote_theme: olivier3lanc/Jekyll-LibDoc
+title: Jekyll LibDoc as remote theme
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
-  A Jekyll documentation theme with built-in search and playground
+  An example of a repository using Jekyll LibDoc as a remote theme
 # IMPORTANT: on Github Pages deploys, url and baseurl must be commented or set to proper settings, otherwise links and resources URL are wrong
-# url: http://192.168.1.54 # the base hostname & protocol for your site, e.g. http://example.com
+# url: http://localhost # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: /Jekyll-LibDoc/_site # the subpath of your site, e.g. /blog
 #permalink: /:path/:basename/:output_ext
 #destination: ../your/new/path # Build relative path destination. The destination directory e.g. /blog
@@ -26,7 +23,7 @@ kramdown:
         disable: true
 sass:
     style: compressed
-# exclude: ['/assets/libdoc/ajax/playground-settings.html']
+#exclude: ['/misc']
 
 # ---------
 # LIBDOC CONFIGURATION
@@ -41,7 +38,7 @@ playground:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
     stylesheets: 
-        # - /demo-only/css/normalize.css
+        - /demo-only/css/normalize.css
         # - /demo-only/css/photoswipe.css
     
     # PLAYGROUND HEAD JAVASCRIPTS
@@ -49,7 +46,7 @@ playground:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
     scripts_head:
-        # - /js/my-toggles.js
+        # - /assets/libdoc/js/my-toggles.js
 
     # PLAYGROUND MODULES JAVASCRIPTS
     # Javascript type="module" are set before text/javascript files
@@ -63,8 +60,8 @@ playground:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
     scripts_body: # Javascript files near </body>. Can be either relative URL from site root, absolute URL starting with 'http'
-        # - /demo-only/js/ola.min.js
-        # - /demo-only/js/scroll-btween.js
+        - /demo-only/js/ola.min.js
+        - /demo-only/js/scroll-btween.js
         # - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
         # - /demo-only/js/demo.js
     
@@ -172,7 +169,7 @@ sidebar:
     # Allows to add links that are not pages included into the project
     # Display additional links anywhere into the sidebar
     additional_links:
-        -   url: https://github.com/olivier3lanc/Jekyll-LibDoc # Local or remote URL
+        -   url: https://github.com/olivier3lanc/LibDoc-remote-demo # Local or remote URL
             title: <span class="i-github u-mr-xxs"></span> View on GitHub # Link text
             order: 0 # Sets the rank of the page link into the sidebar, higher values give lower rank for the page link
             # category: Showcase # Add this this link into a category just like pages
@@ -185,16 +182,20 @@ sidebar:
         -   url: https://olivier3lanc.github.io/Scroll-Btween/
             title: Scroll Btween
             order: 500
-            category: Showcase
+            category: Examples using LibDoc
         -   url: https://olivier3lanc.github.io/Scroll-Frames/
             title: Scroll Frames
             order: 500
-            category: Showcase
+            category: Examples using LibDoc
         -   url: https://olivier3lanc.github.io/seemap/
             title: SEEMAP
             order: 500
-            category: Showcase
+            category: Examples using LibDoc
         # Example remote URL
+        -   url: https://github.com/olivier3lanc/Jekyll-LibDoc
+            title: <span class="i-github u-mr-xxs"></span> Jekyll LibDoc
+            order: 510
+            category: External resources
         -   url: https://pages.github.com
             title: Github Pages
             order: 510
@@ -207,10 +208,10 @@ sidebar:
 # BADGES
 # Feature that allows to display badges into the footer https://shields.io image html and url
 shields:
-    # -   image_html: <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/Jekyll-LibDoc?logo=github&style=flat-square">
-    #     link_url: https://github.com/olivier3lanc/Jekyll-LibDoc
-    # -   image_html: <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/Jekyll-LibDoc?logo=github&style=flat-square">
-    #     link_url: https://github.com/olivier3lanc/Jekyll-LibDoc
+    -   image_html: <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/LibDoc-remote-demo?logo=github&style=flat-square">
+        link_url: https://github.com/olivier3lanc/LibDoc-remote-demo
+    -   image_html: <img alt="no trackers, no cookies and no analytics" title="This website has no trackers, no cookies and no analytics. Only feedback is important :)" src="https://img.shields.io/badge/no%20trackers|cookies|analytics-Just%20feedback-green?style=flat-square">
+        link_url: 'mailto:olivier3lanc@gmail.com'
 
 # ASSETS
 # Settings for the assets layout
