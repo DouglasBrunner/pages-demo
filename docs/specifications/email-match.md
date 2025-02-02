@@ -1,9 +1,9 @@
+{:toc}
+
 ---
 title: "Email Match Specification"
 category: Specifications
 ---
-
-{:toc}
 
 ## First heading
 
