@@ -191,11 +191,11 @@ sidebar:
 
 # BADGES
 # Feature that allows to display badges into the footer https://shields.io image html and url
-shields:
-    -   image_html: <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/LibDoc-remote-demo?logo=github&style=flat-square">
-        link_url: https://github.com/olivier3lanc/LibDoc-remote-demo
-    -   image_html: <img alt="no trackers, no cookies and no analytics" title="This website has no trackers, no cookies and no analytics. Only feedback is important :)" src="https://img.shields.io/badge/no%20trackers|cookies|analytics-Just%20feedback-green?style=flat-square">
-        link_url: 'mailto:olivier3lanc@gmail.com'
+# shields:
+#     -   image_html: <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/olivier3lanc/LibDoc-remote-demo?logo=github&style=flat-square">
+#         link_url: https://github.com/olivier3lanc/LibDoc-remote-demo
+#     -   image_html: <img alt="no trackers, no cookies and no analytics" title="This website has no trackers, no cookies and no analytics. Only feedback is important :)" src="https://img.shields.io/badge/no%20trackers|cookies|analytics-Just%20feedback-green?style=flat-square">
+#         link_url: 'mailto:olivier3lanc@gmail.com'
 
 # ASSETS
 # Settings for the assets layout
@@ -243,7 +243,7 @@ assets:
 prism:
     # THEME
     # coy, dark, funky, okaidia, twilight, solarizedlight, tomorrow, 
-    theme: tomorrow
+    theme: dark 
 
     # FONT SIZE
     # CSS font-size property override for <code>
@@ -338,7 +338,7 @@ prism:
         #- gcode
         #- gdscript
         #- gedcom
-        #- gherkin
+        - gherkin
         #- git
         #- glsl
         #- go
