@@ -10,9 +10,10 @@ toc_levels: 1..3  # (Optional) Only include headings levels 1 to 3
 {:toc}
 
 ## Complete Feature File
-{% highlight cucumber %}
+```gherkin
 {% include feature-files/matching.feature %}
-{% endhighlight %}
+```
+
 
 ## Java Syntax Example
 
